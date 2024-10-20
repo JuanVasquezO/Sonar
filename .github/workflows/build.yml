@@ -111,35 +111,3 @@ jobs:
           # From this path
           path: target/Sonar-0.0.1-SNAPSHOT.jar
 
-  # Deploy's job
-  deploy:
-
-    needs: build
-    name: Deploy
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-
-      - name: Install EB CLI
-        run: |
-          sudo apt-get update
-          sudo apt-get install python3-pip -y
-          pip3 install awsebcli --upgrade --user
-
-      - name: Download JAR artifact
-        # This action downloads artifacts produced by a workflow run.
-        uses: actions/download-artifact@v3
-        with:
-          # Set the name of the artifact to download
-          name: artifact
-          # Set the path where to place the artifact
-          path: target/
-
-      - name: Deploy to Elastic Beanstalk
-        env:
-          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-        run: |
-          eb deploy --region us-east-1
