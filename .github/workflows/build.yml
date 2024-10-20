@@ -130,7 +130,7 @@ jobs:
 
       - name: Download JAR artifact
         # This action downloads artifacts produced by a workflow run.
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v3
         with:
           # Set the name of the artifact to download
           name: artifact
