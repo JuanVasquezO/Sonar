@@ -1,0 +1,8 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+Sonar,com.udea.vueloudea.model,Role,27,9,0,0,8,4,6,1,6,1
+Sonar,com.udea.vueloudea.model,UserF,41,45,0,0,13,20,4,13,4,13
+Sonar,com.udea.vueloudea.controller,RoleController,24,0,0,0,6,0,4,0,4,0
+Sonar,com.udea.vueloudea.controller,UserController,43,0,0,0,6,0,5,0,5,0
+Sonar,com.udea.vueloudea.service,UserService,0,52,0,0,0,13,0,5,0,5
+Sonar,com.udea.vueloudea.service,RoleService,19,0,0,0,5,0,4,0,4,0
+Sonar,com.udea.vueloudea,VueloudeaApplication,8,0,0,0,3,0,2,0,2,0
