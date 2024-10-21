@@ -103,6 +103,7 @@
 					</excludes>
 				</configuration>
 			</plugin>
+
 			<!-- Plugin Jacoco para cobertura de código -->
 			<plugin>
 				<groupId>org.jacoco</groupId>

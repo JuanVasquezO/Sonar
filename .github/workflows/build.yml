@@ -51,7 +51,7 @@ jobs:
           restore-keys: ${{ runner.os }}-m2
       - name: Analyze with SonarCloud
         run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar \
-          -Dsonar.projectKey=JuanVasquezO:Sonar \
+          -Dsonar.projectKey=JuanVasquezO_Sonar \
           -Dsonar.organization=JuanVasquezO \
           -Dsonar.host.url=https://sonarcloud.io \
           -Dsonar.login=$SONAR_TOKEN \
