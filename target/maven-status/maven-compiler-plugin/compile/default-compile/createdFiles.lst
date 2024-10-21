@@ -1,0 +1,9 @@
+com\udea\vueloudea\service\RoleService.class
+com\udea\vueloudea\service\UserService.class
+com\udea\vueloudea\repository\UserRepository.class
+com\udea\vueloudea\controller\RoleController.class
+com\udea\vueloudea\controller\UserController.class
+com\udea\vueloudea\repository\RoleRepository.class
+com\udea\vueloudea\model\Role.class
+com\udea\vueloudea\model\UserF.class
+com\udea\vueloudea\VueloudeaApplication.class
