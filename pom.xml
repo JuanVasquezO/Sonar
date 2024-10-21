@@ -19,10 +19,10 @@
 		<maven.compiler.source>17</maven.compiler.source>
 		<maven.compiler.target>17</maven.compiler.target>
 
-			<java.version>17</java.version>
-			<sonar.organization>JuanVasquezO</sonar.organization>
-			<sonar.host.url>https://sonarcloud.io</sonar.host.url>
-			<sonar.projectKey>JuanVasquezO_Sonar</sonar.projectKey>
+		<java.version>17</java.version>
+		<sonar.organization>JuanVasquezO</sonar.organization>
+		<sonar.host.url>https://sonarcloud.io</sonar.host.url>
+		<sonar.projectKey>JuanVasquezO_Sonar</sonar.projectKey>
 
 
 	</properties>
