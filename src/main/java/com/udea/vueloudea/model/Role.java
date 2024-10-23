@@ -4,8 +4,6 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import lombok.Getter;
-import lombok.Setter;
 
 import java.io.Serializable;
 import java.util.Objects;
@@ -15,9 +13,6 @@ import java.util.Objects;
 //comentario  para probar que funciona el sonarcloud
 
 @Entity
-@Getter
-@Setter
-
 public class Role implements Serializable {
 
     @Id
@@ -32,9 +27,30 @@ public class Role implements Serializable {
         this.role = role;
     }
 
+    // Getters y Setters
 
+    public long getId_role() {
+        return id_role;
+    }
+
+    public void setId_role(long id_role) {
+        this.id_role = id_role;
+    }
+
+    public String getRole() {
+        return role;
+    }
+
+    public void setRole(String role) {
+        this.role = role;
+    }
+
+
+
+
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getId_role());
+    }
 }
-
-
-
-
